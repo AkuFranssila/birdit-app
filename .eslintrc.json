@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "proste/reactTS.js"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": ".",
+    "warnOnUnsupportedTypeScriptVersion": true
+  }
+}
