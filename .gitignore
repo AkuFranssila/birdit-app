@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 
 visualizer
-package-lock.json
 .eslintcache
