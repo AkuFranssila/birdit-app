@@ -5,6 +5,7 @@ import {visualizer} from 'rollup-plugin-visualizer';
 import {chunkSplitPlugin} from 'vite-plugin-chunk-split';
 import {PluginOption} from 'vite';
 import eslint from '@nabla/vite-plugin-eslint';
+import svgr from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -21,9 +22,10 @@ export default defineConfig({
     react({
       babel: {
         babelrc: true,
-      },
+      }
     }),
     eslint(),
+    svgr(),
     visualizer({filename: './visualizer/index.html'}),
     chunkSplitPlugin({
       strategy: 'default',
